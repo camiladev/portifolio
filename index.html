@@ -2,20 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camila Matos</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Meddon&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a33ff96721.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
+          <ul class="container">
+            <li><a href=""><i class="fas fa-home"></i></a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
-        <h1 class="site-title">Camila Matos Bittencourt</h1>
-        <h2 class="site-subtitle">frontend developer</h2>
+        <div class="titulo">
+          <h1 class="site-title">Camila Matos Bittencourt</h1>
+          <h2 class="site-subtitle">frontend developer</h2>
+        </div>
       </header>
+      <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+        <div>
+          <figure class="avatar">
+            <img src="img/perfil.jpeg" alt="Camila Matos">
+          </figure>
+        </div>
+        
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Assumenda aspernatur eaque, dolorem perferendis nulla quas 
+          recusandae ducimus laboriosam maiores, odio explicabo?
+          Accusantium quidem officiis ea soluta velit voluptatibus vitae vero.
+
+        </p>
+        <p>
+          Odit molestias sequi molestiae rem, corrupti harum, labore reprehenderit laudantium corporis delectus quaerat facere? Facere reiciendis tempore ex laborum modi nisi, maiores, minus ea quaerat expedita alias quas consequuntur cum?
+
+        </p>
+        <p>
+          Este site foi construído durante a
+          <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+          😻
+        </p>
+      </section>
+      <section class="portfolio container" id="portfolio">
+        <h2>Projetos</h2>
+
+          <div class="grid">
+            <div class="flip-card">
+              <div class="card">
+                <figure class="card-front">
+                  <img class="img-portfolio" src="./img/CapaBlogLoucaporPets.PNG" alt="eCommerce">
+                </figure>
+                <div class="card-back">
+                  <h3>Blogger</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="card">
+                <figure class="card-front">
+                  <img class="img-portfolio" src="./img/CapaBlogProgramareAprender.PNG" alt=">Mobile">
+                
+                </figure>
+                <div class="card-back">
+                  <h3>Blogger</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="card">
+                <figure class="card-front">
+                  <img class="img-portfolio" src="./img/gifSCE.gif" alt="Web design">
+                  
+                </figure>
+                <div class="card-back">
+                  <h3>Excell</h3>
+                </div>
+              </div>
+            </div>
+            
+              
+              
+             
+          </div>
+          
+      </section>
+
+      <section class="contato container" id="contato">
+        <h2>Contato</h2>
+
+        <div class="grid icons">
+          <a target="_blank" href="https://github.com/camiladev">
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/progcamilamatos">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/camilam4t0s/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:camila.bittencourt@outlook.com">
+            <i class="far fa-envelope"></i>
+          </a>
+        </div>
+      </section>
 </body>
 </html>
