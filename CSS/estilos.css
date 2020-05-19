@@ -84,7 +84,54 @@ a {
     
 }*/
 
+.capa,
+.home{
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundo-capa img{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: left;
+  opacity: 0.1;
+}
+
+@media (min-width: 800px){
+  .fundo-capa img{
+    padding: 3em;
+    object-position: top;
+  }
+
+}
+
+@media (min-width: 1200px){
+  .fundo-capa img{
+    padding: 3em;
+    object-position: 0px -160px;
+  }
+
+}
+
+.capa {
+  position: relative;
+  
+}
+
+.fundo-capa,
+.titulo {
+  /*backface-visibility: hidden;*/
+
+  position: absolute;
+  
+}
+
 .titulo{
+  
   transform: scale(0.2) translateY(50vh);
   opacity: 0;
   animation: 1s ease  animacaoTitulo forwards;
@@ -105,10 +152,11 @@ a {
 .site-title {
     color: whitesmoke;
     text-align: center;
+    text-shadow: 5px 6px 3px darkgray;
 }
 
 .site-title {
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-family: 'Meddon', cursive;
 }
   
@@ -117,6 +165,7 @@ a {
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.8em;
 }
+
 
 .sobre,
 .contato,
@@ -210,7 +259,7 @@ a {
 
 @media (min-width: 880px) {
   .portfolio .grid {
-    align-content: center;
+    align-content: flex-start;
     height: calc(100vh - 8em - 48px);
     grid-template-columns: repeat(3, 240px);
     justify-content: center;
@@ -265,7 +314,7 @@ a {
   height: 180px;
   width: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: top;
   transition: transform 500ms;
 }
 
